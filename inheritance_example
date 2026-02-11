@@ -1,0 +1,30 @@
+// Base class
+
+class Person {
+String name = "Ram";
+
+void display() {
+System.out.println("Name: " + name);
+    }
+}
+
+// derived class
+
+class Student extends Person {
+int rollNo = 25;
+
+void show() {
+System.out.println("Roll Number: " + rollNo);
+    }
+}
+
+// Main class
+
+public class InheritanceExample1 {
+public static void main(String[] args) {
+
+Student obj = new Student();
+obj.display();   
+obj.show();      
+    }
+}
