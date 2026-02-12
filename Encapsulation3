@@ -1,0 +1,23 @@
+public class Bank {
+private Integer balance;
+
+public Integer getBalance() {
+return balance;
+}
+public void setBalance(Integer balance) {
+this.balance = balance;
+     }
+}
+
+
+//Main class
+
+public class BankMain {
+public static void main(String[]args){
+
+Bank obj = new Bank();
+obj.balance = -1;
+System.out.println(obj.getBalance());
+
+}
+}
