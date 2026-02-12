@@ -1,0 +1,37 @@
+        //Base class
+
+Class Java{
+
+private String name;
+private int age;
+
+public String getName(){
+return age;
+
+}
+public int getAge(){
+return age;
+}
+public void setName(String name) {
+this.name = name;
+}
+public void setAge(int age){
+if(age > 0 ) {
+this.age = age;
+  }
+ }
+}
+
+      // Main class
+public class Main {
+public static void main(String[] args) {
+Student obj = new Student();
+obj.setName("Jacks");
+obj.setAge(23);
+
+System.out.println("Name: " + obj.getName());
+System.out.println("Age: " + obj.getAge());
+    }
+}
+
+
