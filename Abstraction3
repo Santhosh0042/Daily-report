@@ -1,23 +1,25 @@
-  //Creating Abstract Class
+// Creating Abstract Class
+
 
 abstract class Phone {
 abstract void turnOn();
 }
 
+// extends Abstract Class
 
-  //Implementing Abstract class
 
-class Iphone extends phone {
+class Iphone extends Phone {
 void turnOn() {
 System.out.println("Iphone is ON");
-
+    }
 }
-}
 
-  // Main class\
+// Main class
+
 
 public class Main {
-phone obj = new Iphone ();
+public static void main(String[] args) {
+Phone obj = new Iphone();  // Polymorphism
 obj.turnOn();
-}
+    }
 }
