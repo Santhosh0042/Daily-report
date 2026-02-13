@@ -1,24 +1,29 @@
-abstract class Vehicle {
-public void start(){
+     // Creating Abstract Class
 
-void stop()
-System.out.pritnln("Vehicle is stopping");
-   }
+abstract class Vehicle { 
+abstract void start();
+abstract void stop();
 }
 
-        // sub class
+// extends Abstract class
+
 class Car extends Vehicle {
 
-void start(){
-System.out.println("Car starts with Key");
-   }
+void start() {
+System.out.println("Car starts with key");
+    }
+
+void stop() {
+System.out.println("Car is stopping");
+    }
 }
-    //Main class
+
+// Main class
 
 public class Main {
-public static void main (String[] args){
-Vehicle obj = new car();
+public static void main(String[] args) {
+Vehicle obj = new Car();  
 obj.start();
 obj.stop();
-     }
+    }
 }
