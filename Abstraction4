@@ -9,7 +9,7 @@ void pay (double amount);
 class CreditCard implements payments {
 public void pay (double amount){
 System.out.println("Paid " + amount + "using CreditCard");
-}
+    }
 }
 
      // Main Class
@@ -18,5 +18,5 @@ public class Main{
 public static void main(String [] args){
 Payment obj = new CreditCard();
 obj.pay(5000);
-}
+    }
 }
