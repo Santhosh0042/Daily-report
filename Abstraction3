@@ -1,0 +1,23 @@
+  //Creating Abstract Class
+
+abstract class Phone {
+abstract void turnOn();
+}
+
+
+  //Implementing Abstract class
+
+class Iphone extends phone {
+void turnOn() {
+System.out.println("Iphone is ON");
+
+}
+}
+
+  // Main class\
+
+public class Main {
+phone obj = new Iphone ();
+obj.turnOn();
+}
+}
