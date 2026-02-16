@@ -1,0 +1,36 @@
+// Base class
+
+class Vehicle {
+void move() {
+System.out.println("Vehicle is moving");
+    }
+}
+
+// extends class 1
+
+class Bike extends Vehicle {
+void move() {
+System.out.println("Bike is moving on 2 wheels");
+    }
+}
+
+// extends class 2
+
+class Car extends Vehicle {
+void move() {
+System.out.println("Car is moving on 4 wheels");
+    }
+}
+
+// Main class
+
+public class PolymorphismExample {
+public static void main(String[] args) {
+
+Vehicle v1 = new Bike();
+Vehicle v2 = new Car();
+
+v1.move(); 
+v2.move();  
+    }
+}
