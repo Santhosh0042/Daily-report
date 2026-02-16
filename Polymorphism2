@@ -1,0 +1,37 @@
+// Base class
+
+class Employee {
+void Salary() {
+System.out.println("salary");
+    }
+}
+
+// extends class 1
+
+class Manager extends Employee {
+void Salary() {
+System.out.println("Manager salary = 45000 ");
+    }
+}
+
+// extends class 2
+
+class Intern extends Employee {
+void Salary() {
+System.out.println("Intern salary = 15000 ");
+    }
+}
+
+// Main class
+
+public class PolymorphismExample2 {
+public static void main(String[] args) {
+
+Employee e1 = new Manager();
+Employee e2 = new Intern();
+
+e1.Salary(45000);
+e2.Salary(15000);
+       
+    }
+}
