@@ -1,0 +1,65 @@
+class Google {
+
+    private int googleId;
+    private int googleVersion;
+    private String name;
+
+    public Google(int googleId, int googleVersion, String name) {
+    this.googleId = googleId;
+    this.googleVersion = googleVersion;
+    this.name = name;
+    }
+
+    public void googleDisplay() {
+    System.out.println("Google Id: " + googleId);
+    System.out.println("Google Version: " + googleVersion);
+    System.out.println("Name: " + name);
+    }
+}
+
+class GoogleUpdate extends Google {
+
+    private int year;
+
+    public GoogleUpdate(int googleId, int googleVersion, String name, int year) {
+    super(googleId, googleVersion, name);
+    this.year = year;
+    }
+
+    @Override
+    public void googleDisplay() {
+    super.googleDisplay();
+    System.out.println("Year: " + year);
+    }
+}
+
+class GoogleYears extends GoogleUpdate {
+
+    private int googleYearsCompleted;
+
+    public GoogleYears(int googleId, int googleVersion, String name, int year, int googleYearsCompleted) {
+    super(googleId, googleVersion, name, year);
+    this.googleYearsCompleted = googleYearsCompleted;
+    }
+
+    @Override
+    public void googleDisplay() {
+    super.googleDisplay();
+    System.out.println("Google Years Completed: " + googleYearsCompleted);
+    }
+}
+
+public class GoogleMain {
+
+    public static void main(String[] args) {
+
+    GoogleUpdate googleUpdateData = new GoogleUpdate(25, 35, "Google", 2025);
+
+    googleUpdateData.googleDisplay();
+
+    GoogleYears googleYearsData =
+    new GoogleYears(30, 40, "Google", 2025, 26);
+
+    googleYearsData.googleDisplay();
+    }
+}
