@@ -1,0 +1,50 @@
+
+class Vehicle {
+    String brand;
+
+    public Vehicle(String brand) {
+        this.brand = brand;
+    }
+
+    public void start() {
+        System.out.println(brand + " vehicle is starting.");
+    }
+}
+// Base class
+
+class Car extends Vehicle {
+
+    public Car(String brand) {
+        super(brand);
+    }
+
+    public void openTrunk() {
+        System.out.println(brand + " car trunk is open.");
+    }
+}
+
+
+class Bike extends Vehicle {
+
+    public Bike(String brand) {
+        super(brand);
+    }
+
+    public void kickStart() {
+        System.out.println(brand + " bike is kick-started.");
+    }
+}
+
+// Main class 
+public class Main {
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota");
+        Bike myBike = new Bike("Harley");
+
+        myCar.start();    
+        myCar.openTrunk();   
+
+        myBike.start();     
+        myBike.kickStart();  
+    }
+}
