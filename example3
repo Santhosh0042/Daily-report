@@ -1,0 +1,28 @@
+class Employee {
+
+    String name;
+    int empId;
+    double salary;
+
+    // Constructor
+
+    Employee(String name, int empId, double salary) {
+        this.name = name;
+        this.empId = empId;
+        this.salary = salary;
+    }
+
+    void displayDetails() {
+        System.out.println("Employee Name : " + name);
+        System.out.println("Employee ID   : " + empId);
+        System.out.println("Salary        : " + salary);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Employee emp1 = new Employee("Santhosh", 101, 50000);
+        emp1.displayDetails();
+    }
+}
