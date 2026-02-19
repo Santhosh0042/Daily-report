@@ -1,0 +1,32 @@
+class OnlinePayment {
+
+    String userName;
+    String paymentMethod;
+    double amount;
+    String paymentStatus;
+
+    // Constructor
+    
+    
+    OnlinePayment(String userName, String paymentMethod, double amount) {
+        this.userName = userName;
+        this.paymentMethod = paymentMethod;
+        this.amount = amount;
+        this.paymentStatus = "Payment Successful";
+    }
+
+    void displayPaymentDetails() {
+        System.out.println("User Name      : " + userName);
+        System.out.println("Payment Method : " + paymentMethod);
+        System.out.println("Amount Paid    : " + amount);
+        System.out.println("Status         : " + paymentStatus);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        OnlinePayment payment1 = new OnlinePayment("Santhosh", "UPI", 500);
+        payment1.displayPaymentDetails();
+    }
+}
