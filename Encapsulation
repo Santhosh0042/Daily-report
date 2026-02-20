@@ -1,0 +1,33 @@
+class Student {
+  private String name;
+  private int marks;
+  
+  public void setName(String name){
+    this.name = name;
+  }
+  
+  public void setMarks(int marks){
+    this.marks = marks;
+  }
+  
+  public String getName(){
+    return name;
+  }
+  
+  public int getMarks(){
+    return marks;
+  }
+  
+}
+public class EncapsulationExample{
+  public static void main(String[]args){
+    
+   Student obj = new Student();
+   obj.setName("Santhosh");
+   obj.setMarks(650);
+   
+   
+   System.out.println("Name :"+ obj.getName());
+   System.out.println("Marks :"+ obj.getMarks());
+  }
+}
