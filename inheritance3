@@ -1,0 +1,19 @@
+class Parent {
+    void show() {
+        System.out.println("Bike");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void show() {
+        System.out.println("My bike was started");
+    }
+}
+
+public class OverridingExample {
+    public static void main(String[] args) {
+        Parent obj = new Child();
+        obj.show();  
+    }
+}
