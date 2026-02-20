@@ -1,0 +1,42 @@
+class Student {
+  private String name;
+  private int marks;
+  private String phoneNumber;
+  
+  public void setName(String name){
+    this.name = name;
+  }
+  
+  public void setMarks(int marks){
+    this.marks = marks;
+  }
+  public void setPhoneNumber(String phoneNumber){
+    this.phoneNumber = phoneNumber;
+  }
+  
+  public String getName(){
+    return name;
+  }
+  
+  public int getMarks(){
+    return marks;
+  }
+    public String getphoneNumber(){
+    return phoneNumber;
+  }
+}
+public class EncapsulationExample{
+  public static void main(String[]args){
+    
+   Student obj = new Student();
+   obj.setName("Jacks");
+   obj.setMarks(700);
+   obj.setPhoneNumber("7989517041");
+   
+   
+   System.out.println("Name :"+ obj.getName());
+   System.out.println("Marks :"+ obj.getMarks());
+   System.out.println("phoneNumber :"+ obj.getphoneNumber());
+    
+  }
+}
