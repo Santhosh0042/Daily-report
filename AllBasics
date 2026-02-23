@@ -1,0 +1,138 @@
+   // class
+
+class Student {
+String name;
+int age;
+
+void display() {
+System.out.println(name + " " + age);
+    }
+
+public static void main(String[] args) {
+Student obj = new Student();
+obj.name = "uday";
+obj.age = 22;
+obj.display();
+    }
+}
+
+----------------------------------------------------------------------------------------------
+   // Variables
+
+class VariableExample {
+int instanceVar = 10;                        // Instance variable
+static int staticVar = 20;                   // Static variable
+
+public static void main(String[] args) {
+int localVar = 30;                           // Local variable
+VariableExample obj = new VariableExample();
+
+System.out.println(obj.instanceVar);
+System.out.println(staticVar);
+System.out.println(localVar);
+    }
+}
+
+-------------------------------------------------------------------------------------------------
+
+  // Constructor
+
+
+class ConstructorExample {
+ConstructorExample() {
+System.out.println("Constructor Called");
+    }
+
+public static void main(String[] args) {
+ConstructorExample obj = new ConstructorExample();
+    }
+}
+
+
+-------------------------------------------------------------------------------------------------
+
+    // Methods
+
+class Method {
+int add(int a, int b) {
+return a + b;
+    }
+
+public static void main(String[] args) {
+Method obj = new Method();
+System.out.println(obj.add(5, 3));
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+
+   // Access modifiers
+
+class Access {
+private int a = 10;
+
+public int getA() {
+return a;
+    }
+
+public static void main(String[] args) {
+Access obj = new Access();
+System.out.println(obj.getA());
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+  // Encapsulation
+
+class Encapsulation {
+private int data;
+
+public void setData(int data) {
+this.data = data;
+    }
+
+public int getData() {
+return data;
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+
+   // inheritance
+
+class Animal {
+void sound() {
+System.out.println("Animal Sound");
+    }
+}
+
+class Dog extends Animal {}
+
+------------------------------------------------------------------------------------------------
+
+  // Polymorphism
+
+class Test {
+void add(int a, int b) {
+System.out.println(a + b);
+    }
+void add(double a, double b) {
+System.out.println(a + b);
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+   // Abstraction
+
+abstract class Shape {
+abstract void draw();
+}
+class Circle extends Shape {
+void draw() {
+System.out.println("Drawing Circle");
+    }
+}
