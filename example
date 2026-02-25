@@ -1,0 +1,19 @@
+class student{
+String name;
+int age;
+
+void display() {
+System.out.println("Name: " + name + " , Age: " + age);
+
+}
+}
+
+public class Main {
+public static void main (String[] args){
+Student obj = new Student();
+obj.name = "Santhosh";
+obj.age = 25;
+obj.display();
+
+}
+}
